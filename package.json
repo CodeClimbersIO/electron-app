@@ -1,8 +1,8 @@
 {
-  "name": "app",
-  "productName": "app",
+  "name": "codeclimbers",
+  "productName": "Code Climbers",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Code Climbers App",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -21,6 +21,7 @@
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron-forge/plugin-vite": "^7.4.0",
     "@electron/fuses": "^1.8.0",
+    "@types/node": "^20.14.2",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "electron": "31.0.1",
@@ -37,6 +38,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@types/express": "^4.17.21",
+    "electron-squirrel-startup": "^1.0.1",
+    "express": "^4.19.2"
   }
 }

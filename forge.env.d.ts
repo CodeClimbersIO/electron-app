@@ -6,7 +6,12 @@ declare global {
   // whether you're running in development or production).
   const MAIN_WINDOW_VITE_DEV_SERVER_URL: string;
   const MAIN_WINDOW_VITE_NAME: string;
-
+  const versions: {
+    node: () => string;
+    chrome: () => string;
+    electron: () => string;
+    ping: () => Promise<string>;
+  };
   namespace NodeJS {
     interface Process {
       // Used for hot reload after preload scripts.
