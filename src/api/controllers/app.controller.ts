@@ -1,5 +1,9 @@
-import express from 'express'
-const router = express.Router()
+import express, { Request, Response } from 'express'
+const appController = express.Router()
 
 // Controller logic goes here
-export default router
+appController.get('/app', (_: Request, res: Response) => {
+  res.send('Hello World!')
+})
+
+export default appController

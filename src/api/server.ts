@@ -4,12 +4,9 @@ import { bootstrap } from './bootstrap'
 const app = express()
 const port = process.env.PORT || 8080
 
-bootstrap(app)
-
 export function startServer() {
+  bootstrap(app)
   app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`)
   })
 }
-
-startServer()

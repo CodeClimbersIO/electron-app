@@ -1,5 +1,6 @@
 import { app, BrowserWindow, ipcMain } from 'electron'
 import path from 'path'
+import { startServer } from './api/server'
 // import { startServer } from './api/server';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -57,4 +58,4 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-// startServer()
+startServer()
