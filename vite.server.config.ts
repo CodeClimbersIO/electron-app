@@ -14,15 +14,17 @@ export default defineConfig((env) => {
   const define = getBuildDefine(forgeEnv)
   console.log(forgeConfigSelf)
   console.log(define)
+  const entry = forgeConfigSelf.entry! as string
   const config: UserConfig = {
     build: {
       lib: {
-        entry: forgeConfigSelf.entry!,
+        entry,
         fileName: () => '[name].js',
         formats: ['cjs'],
       },
       rollupOptions: {
         external,
+        input: ['src/api/server.ts', 'src/api/*.ts'],
       },
     },
     plugins: [pluginHotRestart('restart')],

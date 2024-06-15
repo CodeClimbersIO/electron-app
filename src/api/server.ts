@@ -1,15 +1,15 @@
-// src/index.js
-import express from 'express';
+import express from 'express'
+import { bootstrap } from './bootstrap'
 
-const app = express();
-const port = process.env.PORT || 8080;
+const app = express()
+const port = process.env.PORT || 8080
 
-export function bootstrap(){
-  app.get('/', (req, res) => {
-    res.send('Express + TypeScript Server');
-  });
-  
+bootstrap(app)
+
+export function startServer() {
   app.listen(port, () => {
-    console.log(`[server]: Server is running at http://localhost:${port}`);
-  });
+    console.log(`[server]: Server is running at http://localhost:${port}`)
+  })
 }
+
+startServer()
