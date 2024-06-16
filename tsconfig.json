@@ -9,6 +9,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "outDir": "dist",
+    "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true

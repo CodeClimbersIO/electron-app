@@ -26,11 +26,34 @@
  * ```
  */
 
-import './index.css';
+// import React from 'react'
+// import ReactDOM from 'react-dom/client'
+// import './app/index.css'
+import './app/App'
 
-console.log('👋 This message is being logged by "renderer.ts", included via Vite');
-console.log(`This app is using Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), and Electron (v${versions.electron()})`)
+// // import '@fontsource/roboto/300.css'
+// // import '@fontsource/roboto/400.css'
+// // import '@fontsource/roboto/500.css'
+// // import '@fontsource/roboto/700.css'
+// // import '@fontsource/bai-jamjuree/300.css'
+// // import '@fontsource/bai-jamjuree/400.css'
+// // import '@fontsource/bai-jamjuree/500.css'
+// // import '@fontsource/bai-jamjuree/700.css'
+// // import '@fontsource/roboto-mono/300.css'
 
+// // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+// ReactDOM.createRoot(document.getElementById('root')!).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+// )
+
+console.log(
+  '👋 This message is being logged by "renderer.ts", included via Vite',
+)
+console.log(
+  `This app is using Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), and Electron (v${versions.electron()})`,
+)
 
 const func = async () => {
   const response = await versions.ping()
