@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { AppRoutes } from './AppRoutes'
 
 // import { AppRoutes } from './appRoutes'
@@ -9,10 +9,10 @@ function AppRouter() {
   // const { data: healthCheck, isPending, error } = useGetHealth()
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <AppRoutes />
         {/* {(!isPending && (error || !healthCheck.OK)) ? <Oops /> : <AppRoutes /> } */}
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

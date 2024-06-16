@@ -29,7 +29,6 @@
 // import React from 'react'
 // import ReactDOM from 'react-dom/client'
 // import './app/index.css'
-import './app/App'
 
 // // import '@fontsource/roboto/300.css'
 // // import '@fontsource/roboto/400.css'
@@ -61,3 +60,5 @@ const func = async () => {
 }
 
 func()
+
+import './app/App'
