@@ -92,4 +92,4 @@ typings/
 out/
 
 # database file
-codeclimber.sqlite
+codeclimber.sqlite*

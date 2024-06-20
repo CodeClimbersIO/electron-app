@@ -1,5 +1,5 @@
 const SQL = `--sql
-  CREATE TABLE activity_pulses (
+  CREATE TABLE activities_pulse (
     id SERIAL PRIMARY KEY,
     user_id          text not null,
     entity           text not null,
@@ -17,7 +17,8 @@ const SQL = `--sql
     hash             varchar(17),
     origin           varchar(255),
     origin_id        varchar(255),
-    created_at       timestamp(3)
+    created_at       timestamp(3),
+    description      text
   );
 `
 exports.up = function (knex) {
