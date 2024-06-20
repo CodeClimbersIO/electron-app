@@ -15,6 +15,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:prettier/recommended',
   ],
+  ignorePatterns: ['.eslintrc.js', 'migrations'],
   rules: {
     'prettier/prettier': ['error', { semi: false, singleQuote: true }],
     semi: ['error', 'never'],
@@ -22,6 +23,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-namespace': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
   },
 }

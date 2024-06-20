@@ -13,5 +13,8 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true
-  }
+  },
+  "exclude": [
+    "migrations"
+  ]
 }
