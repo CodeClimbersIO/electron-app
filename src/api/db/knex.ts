@@ -60,4 +60,4 @@ const knexConfig = {
   // wrapIdentifier, // Anything going into the DB
 }
 
-export const knex = Knex(knexConfig)
+export const db = Knex(knexConfig)
