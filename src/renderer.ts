@@ -47,19 +47,19 @@
 //   </React.StrictMode>,
 // )
 
-import AppLogger from './api/utils/appLogger'
+// import AppLogger from './api/utils/appLogger'
 import './app/App'
 
-AppLogger.info(
+console.log(
   '👋 This message is being logged by "renderer.ts", included via Vite',
 )
-AppLogger.info(
+console.log(
   `This app is using Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), and Electron (v${versions.electron()})`,
 )
 
 const func = async () => {
   const response = await versions.ping()
-  AppLogger.info(response) // prints out 'pong'
+  console.log(response) // prints out 'pong'
 }
 
 func()
