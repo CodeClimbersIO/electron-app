@@ -12,8 +12,6 @@ export default defineConfig((env) => {
   const forgeEnv = env as ConfigEnv<'build'>
   const { forgeConfigSelf } = forgeEnv
   const define = getBuildDefine(forgeEnv)
-  console.log(forgeConfigSelf)
-  console.log(define)
   const config: UserConfig = {
     build: {
       lib: {

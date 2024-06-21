@@ -5,7 +5,6 @@ const pulseDb = db<CodeClimbers.Pulse>(tableName)
 
 const getLatestPulse = async (): Promise<CodeClimbers.Pulse> => {
   const res = await pulseDb.orderBy('created_at', 'desc').first()
-  console.log(res)
   return res
 }
 
