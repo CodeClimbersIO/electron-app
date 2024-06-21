@@ -1,6 +1,6 @@
 import { Express } from 'express'
 import { initMigrations } from './db/migrate'
-import { buildRoutes } from './router'
+import { buildRoutes } from './controllers/router'
 
 export async function bootstrap(app: Express) {
   const routes = buildRoutes()
